@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Rater</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>Rate this Image</h1>
+<label for="fileInput" class="custom-file-upload">Choose File</label>
+<input type="file" id="fileInput" accept="image/*" onchange="displayImage(this)">
+<input class="url-input" type="text" placeholder="Paste YouTube URL" id="urlInput">
+<button onclick="loadYouTubeImage()">Load URL Image</button>
+<img id="image" alt="">
+<button onclick="rateImage()">Rate</button>
+<button onclick="clearInputs()">Clear</button>
+<textarea id="ratingResult" readonly></textarea>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
